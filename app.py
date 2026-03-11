@@ -21,9 +21,9 @@ with st.expander('Analizar texto'):
         st.write('Polarity: ', round(blob.sentiment.polarity,2))
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
-        if x >= 0.5:
+        if x >= 0.0 and x <=1.0:
             st.write( 'Es un sentimiento Positivo 😊')
-        elif x <= -0.5:
+        elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
         else:
             st.write( 'Es un sentimiento Neutral 😐')
