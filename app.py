@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 from googletrans import Translator
 
-st.title('Análisis de Sentimiento')
+st.title('Análisis de Sentimiento ˶ᵔ ᵕ ᵔ˶ ')
 image = Image.open('Emociones.jpg')
 st.image(image)
 st.subheader("¿Quieres analizar una frase? Escribela abajo!")
